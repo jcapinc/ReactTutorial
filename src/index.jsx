@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+import { RedirectableApi } from './Api'
+
 // Theoretically will come from an api
 const todo = [
   "Solve World Hunger",
@@ -26,6 +28,6 @@ function TodoListItem(props) {
 }
 
 ReactDom.render(
-  <TodoList items={todo} />, 
+  <RedirectableApi />, 
   document.getElementById('mount')
 )
